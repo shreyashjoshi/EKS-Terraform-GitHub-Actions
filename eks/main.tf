@@ -25,8 +25,8 @@ module "eks" {
   ngw-name              = "${local.env}-${local.org}-${var.ngw-name}"
   eks-sg                = var.eks-sg
 
-  is_eks_role_enabled           = false
-  is_eks_nodegroup_role_enabled = false
+  is_eks_role_enabled           = true
+  is_eks_nodegroup_role_enabled = true
   ondemand_instance_types       = var.ondemand_instance_types
   spot_instance_types           = var.spot_instance_types
   desired_capacity_on_demand    = var.desired_capacity_on_demand
